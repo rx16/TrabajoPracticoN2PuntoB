@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">2019-Actividad2</string>
+    <string name="imageViewSigno">imagen_de_moneda</string>
+    <string name="title">Conversor de Monedas</string>
+    <string name="hintMontoIn">Ingrese un Monto en Pesos AR</string>
+    <string name="instruccionMoneda">Seleccione una Moneda</string>
+    <string name="textDolar">DOLAR (Estados Unidos)</string>
+    <string name="textEuro">EURO (Union Europea)</string>
+    <string name="textReal">REAL (Brasil)</string>
+    <string name="textResultado"> $ 0.00</string>
+    <string name="textBotonConvertir">Convertir</string>
+    <string name="textBotonReset">Resetear</string>
+    <string name="imagenPeso">imagen de signo peso</string>
+
+
+</resources>

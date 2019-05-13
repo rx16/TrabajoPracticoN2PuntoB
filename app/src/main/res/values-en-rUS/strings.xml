@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2019-Activity2</string>
+    <string name="hintMontoIn">Enter an amount in pesos ARG</string>
+    <string name="imageViewSigno">Sign Money</string>
+    <string name="imagenPeso">Sign Peso Image</string>
+    <string name="instruccionMoneda">Select an currency</string>
+    <string name="textBotonConvertir">Convert</string>
+    <string name="textBotonReset">Reset</string>
+    <string name="textDolar">Dollar (United States)</string>
+    <string name="textEuro">Euro (European Union)</string>
+    <string name="textReal">Real (Brazil)</string>
+    <string name="textResultado">Result</string>
+    <string name="title">Currency converter</string>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryColor"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewSigno"
+        android:layout_width="147dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="142dp"
+        android:contentDescription="@string/imagenPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pesoc"
+        tools:srcCompat="@drawable/pesoc" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="75dp"
+        android:text="@string/title"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSigno" />
+
+    <EditText
+        android:id="@+id/editTextMontoIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="95dp"
+        android:autofillHints="@string/hintMontoIn"
+        android:background="@color/secondaryDarkColor"
+        android:ems="10"
+        android:hint="@string/hintMontoIn"
+        android:inputType="number"
+        android:textColor="@color/secondaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/textViewInstruccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="95dp"
+        android:text="@string/instruccionMoneda"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorInstruccion"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMontoIN" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="194dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewInstruccion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInstruccion">
+
+        <RadioButton
+            android:id="@+id/radioButtonDolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/textDolar" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/textEuro" />
+
+        <RadioButton
+            android:id="@+id/radioButtonReal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/textReal" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="209dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/secondaryDarkColor"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/textResultado"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMontoIN"
+        app:layout_constraintStart_toStartOf="@+id/editTextMontoIN"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/buttonConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/primaryLightColor"
+        android:text="@string/textBotonConvertir"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultado" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryLightColor"
+        android:text="@string/textBotonReset"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+        app:layout_constraintTop_toTopOf="@+id/buttonConvertir" />
+
+
+</android.support.constraint.ConstraintLayout>

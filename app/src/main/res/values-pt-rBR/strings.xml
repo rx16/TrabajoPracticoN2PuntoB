@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2019-Actividade2</string>
+    <string name="hintMontoIn">Insira uma quantia em pesos ARG</string>
+    <string name="imageViewSigno">Imagem da moeda</string>
+    <string name="imagenPeso">Imagem dos pesos do sinal</string>
+    <string name="instruccionMoneda">Selecione uma moeda</string>
+    <string name="textBotonConvertir">Converter</string>
+    <string name="textBotonReset">Reset</string>
+    <string name="textDolar">Dollar (Estados Unidos)</string>
+    <string name="textEuro">Euro (União Européia)</string>
+    <string name="textReal">Real (Brasil)</string>
+    <string name="textResultado">Resultado</string>
+    <string name="title">Conversor de moeda</string>
+</resources>
